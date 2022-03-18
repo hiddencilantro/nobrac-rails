@@ -48,5 +48,5 @@ end
 
 
 gem "jwt", "~> 2.3"
-
+gem 'dotenv-rails'
 gem "active_model_serializers", "~> 0.10.13"
