@@ -1,6 +1,6 @@
 # The NOBRAC Initiative (Back-end)
 
-The NOBRAC Initiative is a React front-end and Rails back-end application designed to help raise awareness about climate change and combat global warming via various tools, such as a carbon footprint calculator, as well as provide users with global statistics and additional resources on ways to reduce carbon emissions. Note that there are two separate repositories for this application. Click [here](https://github.com/hiddencilantro/the-nobrac-initiative) for the front-end repository.
+The NOBRAC Initiative is a React front-end and Rails back-end application designed to help raise awareness about climate change and combat global warming using various tools (such as a carbon footprint calculator) as well as provide users with global/U.S. statistics and additional resources on ways to reduce carbon emissions. Note that there are two separate repositories for this application. Click [here](https://github.com/hiddencilantro/the-nobrac-initiative) for the front-end repository.
 
 ## Prerequisites
 
