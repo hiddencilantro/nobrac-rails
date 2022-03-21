@@ -8,6 +8,11 @@ class Api::V1::FootprintsController < ApplicationController
         render json: { footprint: FootprintSerializer.new(footprint) }, status: :created
     end
 
+    def destroy
+        footprint = Footprint.find(params[:id])
+        footprint.destroy
+    end
+
     private
 
     def footprint_params
