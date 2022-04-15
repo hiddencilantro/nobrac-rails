@@ -42,7 +42,6 @@ class ApplicationController < ActionController::API
 
     def authorized?
         unless logged_in?
-            binding.remote_pry
             render json: { message: 'Please sign up or log in' }, status: :unauthorized
         end
     end
