@@ -7,10 +7,22 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "*"
+    origins "https://the-nobrac-initiative.netlify.app"
 
-    resource "*",
+    resource "/api/v1/users",
       headers: :any,
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      methods: [:post]
+    resource "/api/v1/users/*",
+      headers: :any,
+      methods: [:get]
+    resource "/api/v1/footprints",
+      headers: :any,
+      methods: [:post]
+    resource "/api/v1/footprints/*",
+      headers: :any,
+      methods: [:delete]
+    resource "/api/v1/login",
+      headers: :any,
+      methods: [:post]
   end
 end
