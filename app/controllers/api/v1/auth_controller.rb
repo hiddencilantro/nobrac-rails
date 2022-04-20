@@ -1,7 +1,7 @@
 class Api::V1::AuthController < ApplicationController
     def create
         if user_login_params[:email].blank?
-            render json: { message: "Email can't be blank" }, status: :bad_request
+            render json: { message: "Email can't be blank" }, status: :unprocessable_entity
         else
             user = User.find_by(email: user_login_params[:email])
             if user
